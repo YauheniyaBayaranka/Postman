@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "8ff7ebe3-981a-4eea-8430-83703d6da155",
+		"name": "SendyBird",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12232947"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\": \"day2\",\r\n \"password\": \"1111\",\r\n \"username\": \"prigoghaeva@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/Account",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"Account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/me?username=prigoghaeva@gmail.com&password=1111",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"me"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "prigoghaeva@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "1111"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
