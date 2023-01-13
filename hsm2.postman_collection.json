@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "df19f4cc-3093-4a6a-8969-9e4d14efe146",
+		"name": "hsm2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12232947"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "transactionId",
+						"value": "popopopopo",
+						"type": "text"
+					},
+					{
+						"key": "transactionGroupId",
+						"value": "lklklklklklklkk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/encrypt/?encrypt=olololololololol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"encrypt",
+						""
+					],
+					"query": [
+						{
+							"key": "encrypt",
+							"value": "olololololololol"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"46224584\",\"4622000000000000\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/encrypt/batch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"encrypt",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\":\"wagaw\",\"s\":[\"olololol\",\"olololololololol1\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/test/encryptAsync",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"test",
+						"encryptAsync"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
