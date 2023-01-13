@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "67e1e299-e225-4603-a3f6-59bc1eb52eee",
+		"name": "SendyBird2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12232947"
+	},
+	"item": [
+		{
+			"name": "Registration 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\": \"Kitty2\",\r\n \"password\": \"1234qq\",\r\n \"username\": \"qwer@icloud.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/Account",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"Account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/me?username=qwer@icloud.com &password=1234qq",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"me"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "qwer@icloud.com "
+						},
+						{
+							"key": "password",
+							"value": "1234qq"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accounts list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiI2ODEwIiwiVXNlcklkIjoiNTEzMyIsImV4cCI6MTY1NzkxMjY4NywiaXNzIjoiU2VuZHliaXJkIiwiYXVkIjoiU2VuZHliaXJkIn0.4EIjSo8EBm1uE090nMqqvRedmIfj5FXpdI-JJElEdPE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/Accounts",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"Accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "campaigns list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiI2ODEwIiwiVXNlcklkIjoiNTEzMyIsImV4cCI6MTY1NzkxMDU5OCwiaXNzIjoiU2VuZHliaXJkIiwiYXVkIjoiU2VuZHliaXJkIn0.Cb9IWXygJEFJ8z88Ap-746-4jWTJ9wcnNQP64jeDkoY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/campaigns",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Another acc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiI2ODEwIiwiVXNlcklkIjoiNTEzMyIsImV4cCI6MTY1NzkxMjQ2NSwiaXNzIjoiU2VuZHliaXJkIiwiYXVkIjoiU2VuZHliaXJkIn0.eLEGm391C8RKZGEyXNTrNVOb3uQyx47JOrdx0-4fFv0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/Me/accountToken?accountId=6814",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"Me",
+						"accountToken"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "6814"
+						},
+						{
+							"key": "",
+							"value": "JJElEdPE",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiI2ODEwIiwiVXNlcklkIjoiNTEzMyIsImV4cCI6MTY1NzkxMjQ2NSwiaXNzIjoiU2VuZHliaXJkIiwiYXVkIjoiU2VuZHliaXJkIn0.eLEGm391C8RKZGEyXNTrNVOb3uQyx47JOrdx0-4fFv0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"expirationDate\":\"2022-05-20T19:28:21.463Z\",\r\n\"name\":\"token2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/token",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tokens list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiI2ODEwIiwiVXNlcklkIjoiNTEzMyIsImV4cCI6MTY1NzkxMjQ2NSwiaXNzIjoiU2VuZHliaXJkIiwiYXVkIjoiU2VuZHliaXJkIn0.eLEGm391C8RKZGEyXNTrNVOb3uQyx47JOrdx0-4fFv0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/tokens",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send letter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiI2ODEwIiwiVXNlcklkIjoiNTEzMyIsImV4cCI6MTY1NzkxMjQ2NSwiaXNzIjoiU2VuZHliaXJkIiwiYXVkIjoiU2VuZHliaXJkIn0.eLEGm391C8RKZGEyXNTrNVOb3uQyx47JOrdx0-4fFv0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"campaignId\": 20425,\r\n\"userName\":\"qwer@icloud.com\",\r\n\"password\":\"1234qq\",\r\n\"contacts\":[\r\n{\r\n    \"emailAddress\":\"Vas@icloud.com\",\r\n    \"firstName\":\"West\",\r\n    \"lastName\": \"Frend\",\r\n    \"mobile\": \"231457\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qalab-api.sendybird.com/sending",
+					"protocol": "https",
+					"host": [
+						"qalab-api",
+						"sendybird",
+						"com"
+					],
+					"path": [
+						"sending"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
